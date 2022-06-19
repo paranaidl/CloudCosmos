@@ -1,0 +1,92 @@
+body {
+  width: 1200px;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  margin: auto;
+  font-family: 'Nanum Gothic', sans-serif;
+  background-color: #000;
+  /* background-image: url(/images/_game01_Breakout.png);
+  background-repeat: no-repeat;
+  background-position-x: center;
+  background-size: cover; */
+}
+.inner {
+  position: relative;
+  width: 1200px;
+  margin: 2% auto 0;
+  background: linear-gradient(0deg, #000, rgb(44, 44, 44));
+  border-radius: 60px;
+}
+.glow::before, .glow::after {
+  content:'';
+  position: absolute;
+  left: -3px;
+  top: -3px;
+  border-radius: 60px;
+  background: linear-gradient(45deg, #e6ff06, #ff6600, #00ff66, #00ffff, #ff00ff, #ff0099, #6e0dd0, #ff3300, #099fff);
+  background-size: 400%;
+  width: calc(100% + 5px);
+  height: calc(100% + 5px);
+  z-index: -1;
+  animation: animate 20s linear infinite;
+}
+@keyframes animate{
+  0%{
+    background-position: 0 0;
+  }
+  50%{
+    background-position: 400% 0;
+  }
+  100%{
+    background-position: 0 0;
+  }
+}
+.glow::after{
+  filter: blur(40px);
+  /* opacity: 0.5; */
+}
+/* HEADER */
+header > .inner {
+  height: 120px;
+}
+header .logo {
+  width: 103px;
+  height: 103px;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0.6%;
+  margin: auto;
+}
+.game_title p {
+  font-family: 'Metal Mania', 'Nanum Gothic', sans-serif;
+  font-size: 6rem;
+  text-align: center;
+  color: #ffff00;
+  margin: 10px auto 10px;
+}
+canvas {
+  background-color: rgba(128, 0, 128, .1);
+  border: 1px solid #ffff00;
+  margin: 5px auto 5px;
+}
+.temporary {
+  width: 600px;
+  left: 33%;
+  /* display: flex; */
+  /* justify-content: space-around; */
+}
+.temporary a {
+  text-decoration: none;
+}
+.temporary a span {
+  text-align: center;
+  font-size: 4rem;
+  color: #669900;
+  margin: auto;
+}
+.temporary a p {
+  font-size: 2rem;
+  color: #ffff00;
+}

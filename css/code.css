@@ -1,0 +1,66 @@
+html {
+  background: black;
+  height: 100%;
+  overflow: hidden;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+}
+canvas {
+  position: absolute;
+  top:0;
+  left: 0;
+}
+#canvas2 {
+filter: blur(1px);
+}
+a {
+  text-decoration: none;
+}
+.temporary {
+  width: 33%;
+  font-family: 'Orbitron', sans-serif;
+  background-color: rgba(0, 0, 0, 0.1);
+  position: absolute;
+  top: 50%;
+  left: 33%;
+  display: flex;
+  justify-content: space-around;
+}
+#blue {
+  width: 20rem;
+  font-size: 4rem;
+  color: #f0ffff;
+  background-color: rgba(0, 0, 255, .4);
+  border: 0.2rem solid #0f0;
+  border-radius: 1rem;
+}
+#red {
+  width: 20rem;
+  font-size: 4rem;
+  color: #f0ffff;
+  background-color: rgba(255, 0, 0, .4);
+  border: 0.2rem solid #0f0;
+  border-radius: 1rem;
+}
+#blue:hover {
+  -webkit-box-shadow: 0 0 4rem 4rem #0f0;
+  box-shadow: 0 0 4rem 4rem #090fff;
+  border-color:#090fff;
+  width:133%;
+  left:0%;
+  z-index: -1;
+  color: #0f0;
+}
+#red:hover {
+  -webkit-box-shadow: 0 0 4rem 4rem #0f0;
+  box-shadow: 0 0 4rem 4rem #f00;
+  border-color:#f00;
+  width:133%;
+  left:0%;
+  z-index: -1;
+  color: #0f0;
+}

@@ -1,0 +1,22 @@
+.gamemenu {
+    display: flex;
+    /* flex-direction: row; */
+    flex-wrap: wrap;
+    /* width: 90%; */
+    /* min-width: 500px; */
+}
+.gamename {
+    width: 400px;
+    height: 200px;
+    border: 1px solid #7fff00;
+    box-sizing: border-box;
+    padding: 20px;
+    list-style: none;
+    color: #777;
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+}
+.gamename:hover {
+    background-color: #eee;
+}
